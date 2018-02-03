@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>Glenands - Pet Store in HSR Layout | Petnine</title>
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css"/>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body class="clear-back">
+        <div class="navbar-more-overlay"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top animate visible-xs">
+            <div class="container navbar-more visible-xs ">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-comments-o"></span>
+                            Pet Talk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question-circle"></span>
+                            Pet Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-user"></span>
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-plus-square"></span>
+                            Add Listing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-paw"></span>
+                            My Pets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-picture-o"></span>
+                            Photos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-heart-o"></span>
+                            Favourites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question"></span>
+                            My Questions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-bell-o"></span>
+                            Notifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-cog"></span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="visible-xs">
+                <ul class="nav navbar-nav navbar-right mobile-bar">
+                    <li class="col-xs-3 visible-xs xs-pn-logo">
+                        <img src="assets/images/pn-logo-white.png" class="pull-left" />
+                    </li>
+                    <li class="col-xs-7 visible-xs nopadding">
+                        <input type="text" class="form-control input-pn" placeholder="Search for Pet stores, Vets, etc" />
+                    </li>
+                    <li class="col-xs-2 visible-xs nopadding">
+                        <a href="#navbar-more-show">
+                            <span class="menu-icon fa fa-bars"></span>
+                            More
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="search-header hidden-xs">
+                <div class="navbar-header col-sm-2 col-md-2 hidden-xs nopadding">
+                    <div class="left-inner-addon" title="Select City or Area" data-toggle="tooltip" data-placement="bottom">
+                        <span class="left-glyph left-glyph-img"><img src="assets/images/favicon.png" width="21"></span>
+                        <input type="type" class="form-control input-pn" list="cities" placeholder="Select City/Area" />
+                        <datalist id="cities">
+                            <option value="Bangalore">
+                            <option value="Pune">
+                            <option value="Kolkata">
+                            <option value="Mumbai">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7 nopadding">
+                    <div class="left-inner-addon">
+                        <span class="fa fa-search left-glyph lgrey" aria-hidden="true"></span>
+                        <input type="text" class="form-control input-pn" title="Type your search" data-toggle="tooltip" data-placement="bottom" placeholder="Search for Pet stores, Clinics, Vets, Boardinng, Services and Pet-friendly Places and Homes" />
+                        <a href="#"><button class="btn btn-xs transparent-btn btn-inverse-pn" style="position:absolute;margin:20px;right:0;top:-5px;" title="Add your pet business on Petnine" data-toggle="tooltip" data-placement="bottom">ADD A LISTING</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 nopadding clear-back">
+                    <ul class="list-unstyled list-inline nomargin">
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Pet Talk" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-comments-o left-glyph hidden-sm" aria-hidden="true"></span>
+                                Pet Talk
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Pet Help" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-question-circle left-glyph hidden-sm" aria-hidden="true"></span>
+                                Pet Help
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Profile" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-user left-glyph hidden-sm" aria-hidden="true"></span>
+                                Profile
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix bottom15 hidden-xs"><br/><br/></div>
+        
+            <div class="col-sm-offset-2 col-md-offset-2 col-sm-offset-1 col-sm-10 col-md-8 padding10 xs-no-padding">
+                <div class="col-xs-12 col-md-12 nopadding">
+                    <div id="a" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="b">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">Bangalore</span>
+                        </a>>
+                    </div>
+                    <div id="b" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="c" itemprop="child">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">HSR Layout</span>
+                        </a>>
+                    </div>
+                    <div id="c" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="c" itemprop="child">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">Pet Stores</span>
+                        </a>>
+                    </div>
+                    <div id="d" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+                        <a href="#" itemprop="url"><span itemprop="title">Glenands</span></a>
+                    </div>
+                </div>
+                <div class="clearfix bottom15"></div>
+                <div class="col-xs-12 col-sm-3 col-md-3 pad-l0 xs-no-padding biz-logo">
+                    <img src="assets/images/single.png" width="100%" alt="Business-logo" onerror='this.src="assets/images/placeholder.png"' />
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 xs-no-padding">
+                    <h3 class="nomargin color-pn"><b>Glenands</b></h3>
+                    <h3 class="nomargin">
+                        <span class="glyphicon glyphicon-star color-pn"></span>
+                        <span class="glyphicon glyphicon-star color-pn"></span>
+                        <span class="glyphicon glyphicon-star color-pn"></span>
+                        <span class="glyphicon glyphicon-star color-pn"></span>
+                        <span class="glyphicon glyphicon-star llgrey"></span>
+                        <span class="llgrey ratings"><b>100 Ratings | 10 Reviews</b></span>
+                    </h3>
+                    <p class="justify-text contact">
+                        <b title="Address" data-toggle="tooltip" data-placement="right">#195/2, 22nd Cross, 3rd Sector<br/>HSR Layout, Landmark: Opp. HSR Club, 560102</b>
+                    </p>
+                    <span class="ratings">
+                        Established: 2013
+                        <div class="clearfix bottom10"></div>
+                        SHARE PAGE
+                    </span>
+                    <br/>
+                    <img src="assets/images/facebook-share.png" class="share-icon" title="Share on facebook" data-toggle="tooltip" data-placement="bottom"/>
+                    <img src="assets/images/twitter-share.png" class="share-icon" title="Share on twitter" data-toggle="tooltip" data-placement="bottom"/>
+                    <img src="assets/images/google-share.png" class="share-icon" title="Share on google" data-toggle="tooltip" data-placement="bottom"/>
+                    <img src="assets/images/email-share.png" class="share-icon" title="Share via email" data-toggle="tooltip" data-placement="bottom"/>
+                    <br/>   
+                    <span class="llgrey ratings">Claim Business | Report an Error</span>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 nopadding">
+                    <h3 class="nomargin"><br/></h3>
+                    <div class="icon-brief"><img src="assets/images/icons/phone.png"><b>044 802 52578 / 044 802 52578</b></div>
+                    <div class="icon-brief"><img src="assets/images/icons/contact-person.png"><b>Hema</b></div>
+                    <div class="icon-brief"><img src="assets/images/icons/email.png"><b>businessfinder@email.com</b></div>
+                    <div class="icon-brief"><img src="assets/images/icons/website.png"><b>www.glenands.in <a href="#" target="_blank" title="Visit store's website (Opens in new tab)" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-external-link" aria-hidden="true"></i></b></a></div>
+                </div>
+            </div>
+            <div class="clearfix bottom15"></div>
+            <div class="col-sm-12 col-md-12 nopadding business-sections float-panel hidden-xs" data-top="50">
+                <ul class="list-unstyled list-inline col-md-offset-2 col-sm-offset-1">
+                    <li class="bs-hidden" style="padding:5px;display:none;">
+                        <ul class="list-inline">
+                            <li class="nopadding"><img src="assets/images/single.png" class="img-circle" width="40" height="40"/></li>
+                            <li class="nopadding" style="vertical-align:bottom;"><b style="font-size:15px;">Glenands</b><br/>HSR Layout</li>
+                        </ul>
+                    </li>
+                    <li class="bs-option" id="summary">SUMMARY</li>
+                    <li class="bs-option" id="supplies">SUPPLIES</li>
+                    <li class="bs-option" id="photos">PHOTOS</li>
+                    <li class="bs-option" id="map">MAP</li>
+                    <li class="bs-option" id="reviews">REVIEWS</li>
+                </ul>
+            </div>
+            <div class="col-sm-offset-2 col-md-offset-2 col-sm-offset-1 col-sm-10 col-md-8 padding10 xs-no-padding">
+                <span id="summary-section"></span>
+                <div class="col-xs-4 col-sm-2 col-md-2 nopadding summary-service">
+                    <img src="assets/images/featured-icons/play-area.png" alt="Home icon"><br/>
+                    <b>HOME</b>
+                </div>
+                <div class="col-xs-4 col-sm-2 col-md-2 nopadding summary-service">
+                    <img src="assets/images/featured-icons/store-clinic.png" alt="Clinic icon"><br/>
+                    <b>CLINIC</b>
+                </div>
+                <div class="col-xs-4 col-sm-2 col-md-2 nopadding summary-service">
+                    <img src="assets/images/featured-icons/store-salon.png" alt="Salon icon"><br/>
+                    <b>SALON</b>
+                </div>
+                <div class="col-xs-4 col-sm-2 col-md-2 nopadding summary-service">
+                    <img src="assets/images/featured-icons/discounts.png" alt="Discount icon"><br/>
+                    <b>DISCOUNT</b>
+                </div>
+                <div class="clearfix bottom15"></div>
+                <div class="col-xs-6 col-sm-4 col-md-3 nopadding summmary-extras">
+                    <div class="icon-title">
+                        <img src="assets/images/icons/timings.png" alt="Timings icon">
+                        <span class="it-title">TIMINGS</span><br/>
+                        <div class="it-brief">
+                            <ul class="list-inline list-unstyled timing-filter bordered">
+                                <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                            </ul>
+                            <div class="ratings">
+                                9:30AM - 12:00 PM<br/>
+                                5:30AM - 9:00PM<br/>
+                                Appointments Only
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 nopadding summary-extras">
+                    <div class="icon-title">
+                        <img src="assets/images/icons/payment-mode.png" alt="Payment mode icon">
+                        <span class="it-title">PAYMENT MODE</span><br/>
+                        <div class="it-brief">
+                            Cash, Card
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 nopadding summary-extras">
+                    <div class="icon-title">
+                        <img src="assets/images/icons/area.png" alt="Area icon">
+                        <span class="it-title">AREA</span><br/>
+                        <div class="it-brief">
+                            HSR Layout
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <span id="supplies-section"></span>
+                <div class="col-xs-6 col-sm-4 col-md-3 nopadding summary-extras">
+                    <div class="icon-title">
+                        <img src="assets/images/icons/services.png" alt="Facility icon">
+                        <span class="it-title">SUPPLIES</span><br/>
+                        <div class="it-brief">
+                            <div class="ratings lgrey">
+                                Toys<br/>
+                                Feed<br/>
+                                Pick Up and Drop<br/>
+                                24/7 Supervision<br/>
+                                Medical Emergency Care<br/>
+                                Play Time<br/>
+                                Flea Preventatives<br/>
+                                Senior Pet Accommodation<br/>
+                                Physically Challenged Friendly<br/>
+                                CCTV Surveillance<br/>
+                                AC Facilities
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 nopadding summary-extras">
+                    <div class="icon-title">
+                        <img src="assets/images/icons/services.png" alt="Facility icon">
+                        <span class="it-title">CATERS TO</span><br/>
+                        <div class="it-brief">
+                            <div class="ratings lgrey">
+                                Dov<br/>
+                                Cat<br/>
+                                Fish<br/>
+                                Bird
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <span id="photos-section"></span>
+                <div class="icon-title">
+                    <img src="assets/images/icons/photos.png" alt="Photos icon">
+                    <span class="it-title">PHOTOS</span>
+                    <button class="btn btn-pn btn-trans-pn pull-right" title="Add more photos to this list" data-toggle="tooltip" data-placement="top"><span><i class="fa fa-plus" aria-hidden="true"></i> <b>ADD MORE PHOTOS</b></span></button>
+                </div>
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz1.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz1.png" width="100%"/></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz2.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz2.png" width="100%"/></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz3.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz3.png" width="100%"/></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz4.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz4.png" width="100%"/></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz3.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz3.png" width="100%"/></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-3">
+                                <a href="assets/images/biz2.png" rel="prettyPhoto[pp_gal]"><img src="assets/images/biz2.png" width="100%"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <span id="map-section"></span>
+                <div class="icon-title">
+                    <img src="assets/images/icons/map.png" alt="Map icon">
+                    <span class="it-title">MAP</span>
+                    <button class="btn btn-pn btn-trans-pn pull-right"><span><i class="fa fa-location-arrow" aria-hidden="true"></i> <b>GET DIRECTIONS</b></span></button>
+                </div>
+                <div class="col-xs-12 col-md-12 nopadding">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:100%;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com"></a></small></div><div><small></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(12.9095513,77.63728279999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9095513,77.63728279999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Petspace</strong><br>#195/2, 22nd Cross, 3rd Sector, hsr layout, bangalore<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <span id="reviews-section"></span>
+                <div class="icon-title">
+                    <img src="assets/images/icons/reviews.png" alt="Review icon">
+                    <span class="it-title">REVIEWS</span>
+                    <span class="pull-right">
+                        <b>MOST HELPFUL</b>
+                        <b class="color-pn" style="margin-left:10px;">MOST RECENT</b>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-md-12 nopadding review">
+                    <div class="col-xs-3 col-md-2 rev-user xs-no-padding">
+                        <img src="assets/images/user-img.jpg" width="45" height="45" class="img-circle"/>
+                        <div class="clearfix"></div>
+                        <span>
+                            <b>Petnine</b><br/>
+                            May 2016
+                        </span>
+                    </div>
+                    <div class="col-xs-9 col-md-10 rev-content pad-l0">
+                        <h4 class="nomargin">
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star llgrey"></span>
+                        </h4>
+                        <p class="text-justify review-text">He is a very experienced doctor and will not suggest any surgery/tests unnecessarily. Always its a pleasent experience during consultation</p>
+                        <button class="btn btn-sm btn-default">Was this review helpful? YES</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 nopadding review">
+                    <div class="col-xs-3 col-md-2 rev-user xs-no-padding">
+                        <img src="assets/images/user-img.jpg" width="45" height="45" class="img-circle"/>
+                        <div class="clearfix"></div>
+                        <span>
+                            <b>Petnine</b><br/>
+                            May 2016
+                        </span>
+                    </div>
+                    <div class="col-xs-9 col-md-10 rev-content pad-l0">
+                        <h4 class="nomargin">
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star llgrey"></span>
+                        </h4>
+                        <p class="text-justify review-text">He is a very experienced doctor and will not suggest any surgery/tests unnecessarily. Always its a pleasent experience during consultation</p>
+                        <button class="btn btn-sm btn-default">Was this review helpful? YES</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 nopadding review">
+                    <div class="col-xs-3 col-md-2 rev-user xs-no-padding">
+                        <img src="assets/images/user-img.jpg" width="45" height="45" class="img-circle"/>
+                        <div class="clearfix"></div>
+                        <span>
+                            <b>Petnine</b><br/>
+                            May 2016
+                        </span>
+                    </div>
+                    <div class="col-xs-9 col-md-10 rev-content pad-l0">
+                        <h4 class="nomargin">
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star llgrey"></span>
+                        </h4>
+                        <p class="text-justify review-text">He is a very experienced doctor and will not suggest any surgery/tests unnecessarily. Always its a pleasent experience during consultation</p>
+                        <button class="btn btn-sm btn-default">Was this review helpful? YES</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 nopadding review">
+                    <div class="col-xs-3 col-md-2 rev-user xs-no-padding">
+                        <img src="assets/images/user-img.jpg" width="45" height="45" class="img-circle"/>
+                        <div class="clearfix"></div>
+                        <span>
+                            <b>Petnine</b><br/>
+                            May 2016
+                        </span>
+                    </div>
+                    <div class="col-xs-9 col-md-10 rev-content pad-l0">
+                        <h4 class="nomargin">
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star color-pn"></span>
+                            <span class="glyphicon glyphicon-star llgrey"></span>
+                        </h4>
+                        <p class="text-justify review-text">He is a very experienced doctor and will not suggest any surgery/tests unnecessarily. Always its a pleasent experience during consultation</p>
+                        <button class="btn btn-sm btn-default">Was this review helpful? YES</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 listing-pagi nopadding">
+                    <ul class="list-unstyled list-inline pull-right">
+                        <li><a href="#"><b class="color-pn">1</b></a></li>
+                        <li><a href="#"><b>2</b></a></li>
+                        <li><a href="#"><b>3</b></a></li>
+                        <li><a href="#"><b>4</b></a></li>
+                        <li><a href="#"><b>5</b></a></li>
+                        <li><a href="#"><b>6</b></a></li>
+                        <li><a href="#"><b>NEXT ></b></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>  
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2 xs-no-padding">
+                <div class="footer-title">FIND</div>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Pet Stors</li>
+                    <li>Veterinarians</li>
+                    <li>Pet Clinics</li>
+                    <li>Pet Boardings</li>
+                    <li>Pet Salons</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Pet Services</li>
+                    <li>Pet Friendly Places</li>
+                    <li>Pet-allowed Homes</li>
+                    <li>Animal Shelter / NGOs</li>
+                    <li>Pet Cometry</li>
+                </ul>
+            </div>
+            <div class="clearfix bottom10 visible-xs"></div>
+            <div class="col-xs-12 col-sm-3 col-md-3 xs-no-padding">
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PET HELP</div>
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PET TALK</div><br/>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>My Pets</li>
+                    <li>Report Missing Pet</li>
+                    <li>Report Found Pet</li>
+                    <li>Ask a Question</li>
+                    <li>Adoption Center</li>
+                    <li>Be an adopter</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Articles</li>
+                    <li>Videos</li>
+                    <li>GIFs</li>
+                    <li>Memes</li>
+                </ul>
+            </div>
+            <div class="clearfix bottom10 visible-xs"></div>
+            <div class="col-xs-12 col-sm-3 col-md-3 xs-no-padding">
+                <div class="footer-title col-xs-6 col-md-6 nopadding">BUSINESS</div>
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PETNINE</div><br/>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Add a Listing</li>
+                    <li>How we Help</li>
+                    <li>Report an issue</li>
+                    <li>Claim Business</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Help</li>
+                    <li>Policies</li>
+                    <li>Terms &amp; Conditions</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-xs-12 col-md-6 center join-pn">
+                <img src="assets/images/pn-sym-white.png" width="40" />
+                <div class="clearfix bottom10"></div>
+                <span class="footer-title">JOIN US ON</span>
+                <div class="clearfix bottom10"></div>
+                <i class="fa fa-facebook" aria-hidden="true" title="Like us on Facebook" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-google-plus" aria-hidden="true" title="Like us on Google Plus " data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-twitter" aria-hidden="true" title="Like us on Twitter" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-linkedin" aria-hidden="true" title="Like us on Linkedin" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true" title="Like us on Pinterest" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true" title="Like us on Youtube" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-instagram" aria-hidden="true" title="Like us on Instagram" data-toggle="tooltip" data-placement="top"></i>
+                <div class="clearfix bottom10"></div>
+                &copy; Petnine India Pvt Ltd.
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/script.js"></script>
+            <script src="assets/js/prettyPhoto.js"></script>
+        </div>
+    </body>
+</html>

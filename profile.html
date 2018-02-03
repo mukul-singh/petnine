@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>Mukul - Petnine Profile</title>
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css"/>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="navbar-more-overlay"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top animate visible-xs">
+            <div class="container navbar-more visible-xs ">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for pet stores, clinics, etc">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-plus-square"></span>
+                            Add Listing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-paw"></span>
+                            My Pets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-picture-o"></span>
+                            Photos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-heart-o"></span>
+                            Favourites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question"></span>
+                            My Questions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-bell-o"></span>
+                            Notifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-cog"></span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="visible-xs">
+                <ul class="nav navbar-nav navbar-right mobile-bar">
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-comments-o"></span>
+                            Pet Talk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question-circle"></span>
+                            <span class="visible-xs">Pet Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-user"></span>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="#navbar-more-show">
+                            <span class="menu-icon fa fa-bars"></span>
+                            More
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        
+        
+        <div class="container-fluid">
+            <div class="search-header hidden-xs">
+                <div class="navbar-header col-sm-2 col-md-2 hidden-xs nopadding">
+                    <div class="left-inner-addon" title="Select City or Area" data-toggle="tooltip" data-placement="bottom">
+                        <span class="left-glyph left-glyph-img"><img src="assets/images/favicon.png" width="21"></span>
+                        <input type="type" class="form-control input-pn" list="cities" placeholder="Select City/Area" />
+                        <datalist id="cities">
+                            <option value="Bangalore">
+                            <option value="Pune">
+                            <option value="Kolkata">
+                            <option value="Mumbai">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-7 nopadding">
+                    <div class="left-inner-addon">
+                        <span class="fa fa-search left-glyph lgrey" aria-hidden="true"></span>
+                        <input type="text" class="form-control input-pn" title="Type your search" data-toggle="tooltip" data-placement="bottom" placeholder="Search for Pet stores, Clinics, Vets, Boardinng, Services and Pet-friendly Places and Homes" />
+                        <a href="#"><button class="btn btn-xs transparent-btn btn-inverse-pn shadow" style="position:absolute;margin:20px;right:0;top:-5px;" title="Add your pet business on Petnine" data-toggle="tooltip" data-placement="bottom">ADD A LISTING</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 nopadding">
+                    <ul class="list-unstyled list-inline nomargin">
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options clear-back" title="Pet Talk" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-comments-o left-glyph" aria-hidden="true"></span>
+                                Pet Talk
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options clear-back" title="Pet Help" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-question-circle left-glyph" aria-hidden="true"></span>
+                                Pet Help
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options clear-back" title="Profile" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-user left-glyph" aria-hidden="true"></span>
+                                Profile
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        
+        
+            <div class="col-sm-offset-2 col-md-offset-2 col-sm-7 col-md-7 nopadding">
+                <div class="col-sm-12 col-md-12 clear-back padding20 bordered shadow">
+                    <i class="fa fa-lg fa-pencil-square-o pull-right lgrey" aria-hidden="true" title="Edit Profile" data-toggle="tooltip" data-placement="bottom"></i>
+                    <img src="assets/images/user-img.jpg" width="45" height="45" class="img-circle shadow pull-left"/>
+                    <div class="col-sm-4 col-md-4">
+                        <span class="user-name">Mukul Singh</span><br/>
+                        <span class="color-pn user-pet-status">2 Pets Added</span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <ul class="list-unstyled list-inline pro-opt hidden-xs">
+                    <li class="col-sm-2 col-md-2 active">Page</li>
+                    <li class="col-sm-2 col-md-2">My Pets</li>
+                    <li class="col-sm-2 col-md-2">My Questions</li>
+                    <li class="col-sm-2 col-md-2">Favourities</li>
+                    <li class="col-sm-2 col-md-2">Photos</li>
+                    <li class="col-sm-2 col-md-2">Notifications</li>
+                </ul>
+                <div class="clearfix bottom10"></div>
+                <div class="col-sm-3 col-md-3 bordered clear-back nopadding shadow">
+                    <div class="panel-title"><i class="fa fa-bullhorn" aria-hidden="true"></i><span class="pt-title">Reminders</span></div>
+                    <div class="panel-content">
+                        <div class="notification">
+                            <span class="lgrey">Laila's Parvo vaccination is due on</span>
+                            <br/>
+                            08/06/2016
+                            <br/>
+                            <button class="btn btn-pn btn-trans-pn shadow full-width" data-toggle="tooltip" title="Checkout Clinics nearby" data-placement="bottom"><span>Clinics nearby</span></button>
+                        </div>
+                        <div class="notification">
+                            <span class="lgrey">Laila's Parvo vaccination is due on</span>
+                            <br/>
+                            08/06/2016
+                            <br/>
+                            <button class="btn btn-pn btn-trans-pn shadow full-width" data-toggle="tooltip" title="Checkout Clinics nearby" data-placement="bottom"><span>Clinics nearby</span></button>
+                        </div>
+                        <span class="color-pn btn-trans-pn" title="See all reminders" data-toggle="tooltip" data-placement="bottom"><span>SEE ALL REMINDERS</span></span>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 pad-r0">
+                    <div class="full-width bordered clear-back shadow">
+                        <ul class="list-unstyled list-inline panel-ul-pn nomargin">
+                            <li class="color-pn">PHOTO</li>
+                            <li>VIDEO</li>
+                            <li>LIFE EVENT</li>
+                        </ul>
+                        <div class="col-sm-12 col-md-12 padding10">
+                            <a href="#"><img src="assets/images/plus.png" class="img-responsive pull-left shadow" data-toggle="tooltip" data-placement="bottom" title="Add a photo" /></a>
+                            <div class="col-sm-6 col-md-6 pull-right nopadding">
+                                <button class="btn btn-inverse-pn btn-trans-pn pull-right btn-mid-pn shadow" title="Post in public" data-toggle="tooltip" data-placement="top"><span>Public</span></button>
+                                <div class="clearfix"></div>
+                                <button class="btn btn-pn btn-trans-pn btn-mid-pn pull-right shadow" title="Post a photo" data-toggle="tooltip" data-placement="top"><span>POST PHOTO</span></button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix bottom10"></div>
+                    <div class="full-width bordered clear-back nopadding shadow">
+                        <div class="col-sm-1 col-md-1 nopadding">
+                            <div class="post-date shadow" title="Posted on June 10" data-toggle="tooltip" data-placement="right">JUN<br/>10</div>
+                            <div class="post-quote shadow" title="Topic" data-toggle="tooltip" data-placement="right"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="col-sm-11 col-md-11 nopadding">
+                            <h4 class="color-pn post-topic-title">Why do Daschunds like to dig?</h4>
+                            <div class="post-ans lgrey">
+                                Posted by 
+                                <span class="color-pn"><a href="#" title="See Admin's profile" data-toggle="tooltip" data-placement="top">Admin</a></span> in <span class="color-pn" title="Checkout Video categories" data-toggle="tooltip" data-placement="top"><a href="#">Video</a></span>
+                                <span class="color-pn"><i class="fa fa-tags fa-topic-tag" aria-hidden="true"></i> <a href="#" title="Checkout topics in Nature category" data-toggle="tooltip" data-placement="top">Nature</a></span>
+                                <span class="color-pn"><i class="fa fa-comments fa-topic-tag" aria-hidden="true"></i> <a href="#" title="22 Pet lovers replied on this topic. Click to see all replies" data-toggle="tooltip" data-placement="top">22</a></span>
+                                <div class="clearfix bottom10"></div>
+                                <p class="justify-text"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</i></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix bottom10"></div>
+                    <div class="full-width bordered clear-back nopadding shadow">
+                        <div class="col-sm-1 col-md-1 nopadding">
+                            <div class="post-date shadow" title="Posted on June 4" data-toggle="tooltip" data-placement="right">JUN<br/>4</div>
+                            <div class="post-quote shadow" title="Topic" data-toggle="tooltip" data-placement="right"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="col-sm-11 col-md-11 nopadding">
+                            <h4 class="color-pn post-topic-title">Why do Daschunds like to dig?</h4>
+                            <div class="post-ans lgrey">
+                                Posted by 
+                                <span class="color-pn"><a href="#" title="See Admin's profile" data-toggle="tooltip" data-placement="top">Admin</a></span> in <span class="color-pn" title="Checkout Video categories" data-toggle="tooltip" data-placement="top"><a href="#">Video</a></span>
+                                <span class="color-pn"><i class="fa fa-tags fa-topic-tag" aria-hidden="true"></i> <a href="#" title="Checkout topics in Nature category" data-toggle="tooltip" data-placement="top">Nature</a></span>
+                                <span class="color-pn"><i class="fa fa-comments fa-topic-tag" aria-hidden="true"></i> <a href="#" title="22 Pet lovers replied on this topic. Click to see all replies" data-toggle="tooltip" data-placement="top">22</a></span>
+                                <div class="clearfix bottom10"></div>
+                                <p class="justify-text"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</i></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix bottom10"></div>
+                    <div class="full-width bordered clear-back nopadding shadow">
+                        <div class="col-sm-1 col-md-1 nopadding">
+                            <div class="post-date shadow" title="Posted on May 12" data-toggle="tooltip" data-placement="right">MAY<br/>12</div>
+                            <div class="post-quote shadow" title="Question" data-toggle="tooltip" data-placement="right"><i class="fa fa-lg fa-question" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="col-sm-11 col-md-11 nopadding">
+                            <h5 class="lgrey post-qn-title"><i>My Dog keeps eating grass!!</i><a href="#" class="lgrey"><span class="ans-count pull-right btn-trans-pn" title="See all 15 answers for this question" data-toggle="tooltip" data-placement="top"><span>15 ANSWERS</span></span></a></h5>
+                            <div class="clearfix bottom10"></div>
+                            <div class="col-sm-1 col-md-1 pull-left lgrey">
+                                <i class="fa fa-lg fa-check-circle" aria-hidden="true" title="Verified Answer" data-toggle="tooltip" data-placement="bottom"></i>
+                            </div>
+                            <div class="col-sm-11 col-md-11 pull-right post-ans pad-l0 llgrey">
+                                <p class="justify-text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <span class="pull-left">Alex White @alexwhite</span>
+                                <span class="pull-right">2 hours ago</span>
+                                <div class="clearfix bottom10"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix bottom10"></div>
+        
+        
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

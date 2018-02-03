@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>Listings for Pet Stores in HSR Layout = Petnine</title>
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css"/>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="navbar-more-overlay"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top animate visible-xs">
+            <div class="container navbar-more visible-xs ">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-comments-o"></span>
+                            Pet Talk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question-circle"></span>
+                            Pet Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-user"></span>
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-plus-square"></span>
+                            Add Listing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-paw"></span>
+                            My Pets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-picture-o"></span>
+                            Photos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-heart-o"></span>
+                            Favourites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-question"></span>
+                            My Questions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-bell-o"></span>
+                            Notifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon fa fa-cog"></span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="visible-xs">
+                <ul class="nav navbar-nav navbar-right mobile-bar">
+                    <li class="col-xs-3 visible-xs xs-pn-logo">
+                        <img src="assets/images/pn-logo-white.png" class="pull-left" />
+                    </li>
+                    <li class="col-xs-7 visible-xs nopadding">
+                        <input type="text" class="form-control input-pn" placeholder="Search for Pet stores, Vets, etc" />
+                    </li>
+                    <li class="col-xs-2 visible-xs nopadding">
+                        <a href="#navbar-more-show">
+                            <span class="menu-icon fa fa-bars"></span>
+                            More
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="search-header hidden-xs">
+                <div class="navbar-header col-sm-2 col-md-2 hidden-xs nopadding">
+                    <div class="left-inner-addon" title="Select City or Area" data-toggle="tooltip" data-placement="bottom">
+                        <span class="left-glyph left-glyph-img"><img src="assets/images/favicon.png" width="21"></span>
+                        <input type="type" class="form-control input-pn" list="cities" placeholder="Select City/Area" />
+                        <datalist id="cities">
+                            <option value="Bangalore">
+                            <option value="Pune">
+                            <option value="Kolkata">
+                            <option value="Mumbai">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7 nopadding">
+                    <div class="left-inner-addon">
+                        <span class="fa fa-search left-glyph lgrey" aria-hidden="true"></span>
+                        <input type="text" class="form-control input-pn" title="Type your search" data-toggle="tooltip" data-placement="bottom" placeholder="Search for Pet stores, Clinics, Vets, Boardinng, Services and Pet-friendly Places and Homes" />
+                        <a href="#"><button class="btn btn-xs transparent-btn btn-inverse-pn" style="position:absolute;margin:20px;right:0;top:-5px;" title="Add your pet business on Petnine" data-toggle="tooltip" data-placement="bottom">ADD A LISTING</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 nopadding clear-back">
+                    <ul class="list-unstyled list-inline nomargin">
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Pet Talk" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-comments-o left-glyph hidden-sm" aria-hidden="true"></span>
+                                Pet Talk
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Pet Help" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-question-circle left-glyph hidden-sm" aria-hidden="true"></span>
+                                Pet Help
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="col-sm-4 col-md-4 nav-options" title="Profile" data-toggle="tooltip" data-placement="bottom">
+                                <span class="fa fa-user left-glyph hidden-sm" aria-hidden="true"></span>
+                                Profile
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix bottom10 hidden-xs"><br/><br/><br/></div>
+        
+            <div class="col-sm-offset-1 col-md-offset-2 col-sm-10 col-md-8 nopadding">
+                <div class="col-xs-9 col-sm-12 col-md-12 xs-no-padding">
+                    <div class="col-xs-2 col-sm-1 col-md-1 nopadding">
+                        <img src="assets/images/listing-category/pet-stores.png" width="45"/>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-11 nopadding">
+                        <div id="a" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="b">
+                            <a href="#" itemprop="url">
+                                <span itemprop="title">Bangalore</span>
+                            </a>>
+                        </div>
+                        <div id="b" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="c" itemprop="child">
+                            <a href="#" itemprop="url">
+                                <span itemprop="title">HSR Layout</span>
+                            </a>>
+                        </div>
+                        <div id="c" class="bcitem" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+                            <a href="#" itemprop="url"><span itemprop="title">Pet Stores</span></a>
+                        </div><br/>
+                        <span class="listing-counter"><b>47 matches found</b></span>
+                    </div>
+                </div>
+                <div class="toggle-filters visible-xs pull-right">FILTERS <i class="fa fa-filter" aria-hidden="true"></i></div>
+                <div class="clearfix bottom15"></div>
+                <div class="col-sm-3 col-md-3 lgrey pad-r0 filters">
+                    <div class="filter">
+                        <div class="filter-title">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> <b>LOCATION</b>
+                            <i class="fa fa-minus pull-right expand-filter" aria-hidden="true"></i>
+                        </div>
+                        <div class="filter-set">
+                            <label><input type="checkbox" name="loc-filter" checked/> HSR Layout</label><br/>
+                            <label><input type="checkbox" name="loc-filter" checked/> Kormangala</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Kormangala 3 Block</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Kormangala 4 Block</label><br/>
+                            <label><input type="checkbox" name="loc-filter" checked/> Kormangala 5 Block</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Bellandur</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Sarjapur</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> BTM Layout 1st Stage</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Kormangala 6 Block</label><br/>
+                            <label><input type="checkbox" name="loc-filter" /> Domlur</label><br/>
+                            <i class="fa fa-chevron-up pull-right toggle-filters visible-xs toggle-up bordered" aria-hidden="true"></i>
+                            <div class="clearfix bottom10"><br/></div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-title">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> <b>AVAILABILITY</b>
+                            <i class="fa fa-minus pull-right expand-filter" aria-hidden="true"></i>
+                        </div>
+                        <div class="filter-set">
+                            <ul class="list-inline list-unstyled availability-filter bordered">
+                                <li class="active" title="Available on any day of week" data-toggle="tooltip" data-placement="bottom">ANY</li>
+                                <li title="Available on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                <li title="Available on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                <li class="active" title="Available on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                <li title="Available on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                <li title="Available on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                <li title="Available on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                <li title="Available on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                            </ul>
+                            <i class="fa fa-chevron-up pull-right toggle-filters visible-xs toggle-up bordered" aria-hidden="true"></i>
+                            <div class="clearfix bottom10"><br/></div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-title">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> <b>CATERS TO</b>
+                            <i class="fa fa-minus pull-right expand-filter" aria-hidden="true"></i>
+                        </div>
+                        <div class="filter-set">
+                            <label><input type="checkbox" name="cater-filter" /> Dog</label><br/>
+                            <label><input type="checkbox" name="cater-filter" checked/> Cat</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Bird</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Fish</label><br/>
+                            <label><input type="checkbox" name="cater-filter" checked/> Reptile</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Guinea Pigs</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Rabbits</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Hamsters</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Large Animals</label><br/>
+                            <label><input type="checkbox" name="cater-filter" /> Others</label><br/>
+                            <i class="fa fa-chevron-up pull-right toggle-filters visible-xs toggle-up bordered" aria-hidden="true"></i>
+                            <div class="clearfix bottom10"><br/></div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-title">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> <b>SUPPLIES</b>
+                            <i class="fa fa-minus pull-right expand-filter" aria-hidden="true"></i>
+                        </div>
+                        <div class="filter-set">
+                            <label><input type="checkbox" name="supply-filter" /> Toys</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Feeds</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Leashes/Collars</label><br/>
+                            <label><input type="checkbox" name="supply-filter" checked/> Training Equipments</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Clothing</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Costumes</label><br/>
+                            <label><input type="checkbox" name="supply-filter" checked/> Accessories</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Treats</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Obedience Tools</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Beds</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Travelling Equipment</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Dog House</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Cages</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Fish Bowls</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Pet-doors</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Flea Preventatives</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Litters</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Vegetarian Options</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Medicines</label><br/>
+                            <label><input type="checkbox" name="supply-filter" /> Aquariums</label><br/>
+                            <i class="fa fa-chevron-up pull-right toggle-filters visible-xs toggle-up bordered" aria-hidden="true"></i>
+                            <div class="clearfix bottom15 visible-xs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 pad-r0 xs-no-padding">
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <i class="fa fa-bookmark fa-2x pull-right sponsered color-pn" aria-hidden="true" title="Sponsered Business" data-toggle="tooltip" data-placement="top"></i>
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Fuzzy Wuzzy Pet Styling Studio" data-toggle="tooltip" data-placement="top">Fuzzy Wuzzy Pet Styling Studio</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 4 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">100 Ratings | 10 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <i class="fa fa-bookmark fa-2x pull-right sponsered color-pn" aria-hidden="true" title="Sponsered Business" data-toggle="tooltip" data-placement="top"></i>
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Petspace" data-toggle="tooltip" data-placement="top">Petspace</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 3 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">85 Ratings | 9 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Fuzzy Wuzzy Pet Styling Studio" data-toggle="tooltip" data-placement="top">Fuzzy Wuzzy Pet Styling Studio</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 4 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">100 Ratings | 10 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Petspace" data-toggle="tooltip" data-placement="top">Petspace</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 3 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">85 Ratings | 9 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Fuzzy Wuzzy Pet Styling Studio" data-toggle="tooltip" data-placement="top">Fuzzy Wuzzy Pet Styling Studio</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 4 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">100 Ratings | 10 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-item">
+                        <div class="col-xs-3 col-sm-2 col-md-2 business-photo nopadding">
+                            <img src="assets/images/pet_store.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-9 col-sm-6 col-md-6 business-detail">
+                            <h4 class="business-title color-pn"><b><a href="#" title="See complete details of Petspace" data-toggle="tooltip" data-placement="top">Petspace</a></b></h4>
+                            <p class="justify-text contact lgrey">
+                                <b title="Phone Number" data-toggle="tooltip" data-placement="right">+(91)-80-33050293</b><br/>
+                                No. 35, Church Gate, Church Street, M.G. Road, Bangalore - 560001, Next Empire Restaurant
+                            </p>
+                            <span title="Average Rating : 3 out of 5" data-toggle="tooltip" data-placement="right">
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star color-pn"></i>
+                                <i class="fa fa-star lgrey"></i>
+                                <i class="fa fa-star lgrey"></i>
+                            </span>
+                            <div class="clearfix hidden-xs"></div>
+                            <span class="llgrey ratings">85 Ratings | 9 Reviews</span>
+                        </div>
+                        <div class="col-xs-9 col-sm-4 col-md-4 business-extras pull-right">
+                            <div class="hidden-xs">
+                                <div class="icon-title-ls">
+                                    <img src="assets/images/icons/timings.png" alt="Timings icon">
+                                    <div class="it-time-brief">
+                                        <ul class="list-inline list-unstyled timing-filter bordered">
+                                            <li title="Timings on Monday" data-toggle="tooltip" data-placement="bottom">M</li>
+                                            <li title="Timings on Tuesday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li class="active" title="Timings on Wednesday" data-toggle="tooltip" data-placement="bottom">W</li>
+                                            <li title="Timings on Thursday" data-toggle="tooltip" data-placement="bottom">T</li>
+                                            <li title="Timings on Friday" data-toggle="tooltip" data-placement="bottom">F</li>
+                                            <li title="Timings on Saturday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                            <li title="Timings on Sunday" data-toggle="tooltip" data-placement="bottom">S</li>
+                                        </ul>
+                                        <div>
+                                            9:30AM - 12:00 PM<br/>
+                                            5:30AM - 9:00PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-pn btn-trans-pn business-loc" title="View location on map" data-toggle="tooltip" data-placement="bottom"><span><i class="fa fa-map-marker" aria-hidden="true"></i> <b>VIEW LOCATION</b></span></button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 bordered clear-back listing-pagi">
+                        <ul class="list-unstyled list-inline pull-right">
+                            <li><a href="#" title="Search results for Pet Salons - Page 1" data-toggle="tooltip" data-placement="bottom"><b class="color-pn">1</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Page 2" data-toggle="tooltip" data-placement="bottom"><b>2</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Page 3" data-toggle="tooltip" data-placement="bottom"><b>3</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Page 4" data-toggle="tooltip" data-placement="bottom"><b>4</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Page 5" data-toggle="tooltip" data-placement="bottom"><b>5</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Page 6" data-toggle="tooltip" data-placement="bottom"><b>6</b></a></li>
+                            <li><a href="#" title="Search results for Pet Salons - Next Page" data-toggle="tooltip" data-placement="bottom"><b>NEXT ></b></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2 xs-no-padding">
+                <div class="footer-title">FIND</div>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Pet Stors</li>
+                    <li>Veterinarians</li>
+                    <li>Pet Clinics</li>
+                    <li>Pet Boardings</li>
+                    <li>Pet Salons</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Pet Services</li>
+                    <li>Pet Friendly Places</li>
+                    <li>Pet-allowed Homes</li>
+                    <li>Animal Shelter / NGOs</li>
+                    <li>Pet Cometry</li>
+                </ul>
+            </div>
+            <div class="clearfix bottom10 visible-xs"></div>
+            <div class="col-xs-12 col-sm-3 col-md-3 xs-no-padding">
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PET HELP</div>
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PET TALK</div><br/>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>My Pets</li>
+                    <li>Report Missing Pet</li>
+                    <li>Report Found Pet</li>
+                    <li>Ask a Question</li>
+                    <li>Adoption Center</li>
+                    <li>Be an adopter</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Articles</li>
+                    <li>Videos</li>
+                    <li>GIFs</li>
+                    <li>Memes</li>
+                </ul>
+            </div>
+            <div class="clearfix bottom10 visible-xs"></div>
+            <div class="col-xs-12 col-sm-3 col-md-3 xs-no-padding">
+                <div class="footer-title col-xs-6 col-md-6 nopadding">BUSINESS</div>
+                <div class="footer-title col-xs-6 col-md-6 nopadding">PETNINE</div><br/>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>Add a Listing</li>
+                    <li>How we Help</li>
+                    <li>Report an issue</li>
+                    <li>Claim Business</li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-6 nopadding">
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Help</li>
+                    <li>Policies</li>
+                    <li>Terms &amp; Conditions</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-xs-12 col-md-6 center join-pn">
+                <img src="assets/images/pn-sym-white.png" width="40" />
+                <div class="clearfix bottom10"></div>
+                <span class="footer-title">JOIN US ON</span>
+                <div class="clearfix bottom10"></div>
+                <i class="fa fa-facebook" aria-hidden="true" title="Like us on Facebook" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-google-plus" aria-hidden="true" title="Like us on Google Plus " data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-twitter" aria-hidden="true" title="Like us on Twitter" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-linkedin" aria-hidden="true" title="Like us on Linkedin" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true" title="Like us on Pinterest" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true" title="Like us on Youtube" data-toggle="tooltip" data-placement="top"></i>
+                <i class="fa fa-instagram" aria-hidden="true" title="Like us on Instagram" data-toggle="tooltip" data-placement="top"></i>
+                <div class="clearfix bottom10"></div>
+                &copy; Petnine India Pvt Ltd.
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        </div>
+    </body>
+</html>
